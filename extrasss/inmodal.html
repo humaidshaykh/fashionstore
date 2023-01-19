@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {box-sizing: border-box;
+    }
+    
+    .for-modal {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      overflow: hiden;
+    }
+    
+    .image-modal {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    .overlay-modal {
+      position: absolute; 
+      bottom: 0; 
+      background: rgb(0, 0, 0);
+      color: #f1f1f1; 
+      width: 100%;
+      transition: 0.5s ease;
+      opacity:0;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      text-align: center;
+      overflow: hidden;
+      bottom:-300px
+    }
+    
+    .for-modal:hover .overlay-modal {
+      opacity: 1;
+      bottom: 0px;
+    }
+    .for-modal:hover{
+    overflow: hidden;
+    }
+    
+    </style>
+<body>
+    <h2>Image Overlay Title</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="for-modal">
+  <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="image-modal">
+  <div class="overlay-modal">My Name is John</div>
+</div>
+</body>
+</html>

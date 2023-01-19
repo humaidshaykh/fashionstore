@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Document</title>
+    <!-- bootstrap css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- font awesome css link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- font awesome css link-->
+    <link rel="stylesheet" href="styling/index.css">
+</head>
+<style>
+
+  
+</style>
+<body>
+  <!-- top items -->
+  <div class="containerfluid top-item" style="border-bottom: 1px solid rgba(0, 0, 0, 0.2);">
+    <div class="droppdownn" style="margin-left: 25px;">
+      <button class="droppbtnn">ENGLISH <i style="font-size: 8px; align-items: center; justify-content: center; text-align: center; color: #666;" class="fa-sharp fa-solid fa-angle-down"></i></button>
+      <div class="droppdownn-content">
+        <a href="#">Deutsch</a>
+        <a href="#">French</a>
+        <a href="#">German</a>
+      </div>
+    </div>
+    <div class="droppdownn">
+      <button class="droppbtnn d2">COUNTRY <i style="font-size: 8px; align-items: center; justify-content: center; text-align: center; color: #666;" class="fa-sharp fa-solid fa-angle-down"></i></button>
+      <div class="droppdownn-content">
+        <a href="#">UNITED STATES(USD)</a>
+        <a href="#">ITALY(EURO)</a>
+        <a href="#">JAPAN(JPY)</a>
+      </div>
+    </div>
+    <button class="droppbtnn d3">FREE SHIPPING FOR ALL ORDERS OF $150</button>  
+  </div>
+  <!-- top items end-->
+
+
+  <!-- navbar -->
+
+    <!-- header section starts  -->
+
+    <header class="headerr">
+
+      <div class="header-1">
+  
+          <a href="#" class="logo"><img width="120px" src="images/logo.png" alt=""></a>
+  
+          <form action="" class="search-form">
+              <input type="search" name="" placeholder="Search here" id="search-box">
+              <label for="search-box" class="fas fa-search"></label>
+          </form>
+  
+          <div class="icons">
+              <div id="search-btnnnnn" class="fas fa-search"></div>
+              <a href="#" class="far fa-heart fa-9x"></a>
+              <a href="#" class="fa-sharp fa-solid fa-bag-shopping"></a>
+              <div id="login-btn" class="fa-regular fa-user"></div>
+          </div>
+  
+      </div>
+  
+      <div class="header-2">
+          <nav class="navbarrr">
+              <div class="dropdownn">
+              <a style="background-color: var(--red-dark-color);" class="dropbtnn" href="#home"><i class="fa-solid fa-bars" style="margin-right: 10px; font-size: 16px; align-items: center;"></i>BROWSE CATEGORIES<i class="fa-sharp fa-solid fa-angle-down" style="margin-left: 70px; font-size: 16px; align-items: center;"></i></a>
+              <div class="dropdownn-content">
+                  <a id="drop1st" href="#">Beauty & Personal care</a>
+                  <a id="drop" href="#">Nutritional Supplement</a>
+                  <a id="drop" href="#">Accessories</a>
+                  <a id="drop" href="#">Gourmet & Grocery Foods</a>
+                  <a id="drop" href="#">Toys & Games</a>
+                  <a id="drop" href="#">Pet Supplies</a>
+                  <a id="drop" href="#">Electronics</a>
+                  <a id="drop" href="#">Home & Kitchen</a>
+                  <a id="drop" href="#">Headphones</a>
+                  <a id="droplast" href="#">Baby Products</a>
+          </div>
+      </div>
+              <a href="#featured">HOME</a>
+              <a href="#arrivals">CONTACT US</a>
+              <a href="#reviews">ABOUT US</a>
+              <!-- <a href="#blogs">BLOGS</a> -->
+          </nav>
+      </div>
+  
+  </header>
+  
+  <!-- header section ends -->
+  
+  <!-- bottom navbar  -->
+  
+  <nav class="bottom-navbar">
+      <a href="#home" class="fas fa-home"><span style="font-size: 12px; font-weight: 500; color: black; "><br>Home</span></a>
+      <a href="#featured" class="fas fa-list"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><span style="font-size: 12px; font-weight: 500; color: black; "><br>Categories</span></a>
+      <a href="#reviews" class="fa-sharp fa-solid fa-bag-shopping"><span style="font-size: 12px; font-weight: 500; color: black; "><br>Cart</span></a>
+      <a href="#blogs" class="fa-solid fa-user"><span style="font-size: 12px; font-weight: 500; color: black; "><br>My account</span></a>
+  </nav>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active rounded-0 bottom-nav-cat" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">MENU</button>
+              <button class="nav-link rounded-0 bottom-nav-cat" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">CATEGORIES</button>
+            </div>
+          </nav>
+          <div class="tab-content ssp" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+              <a href="#" class="menu-border-bottom">HOME</a>
+              <a href="#" class="menu-border-bottom">SHOP</a>
+              <a href="#" class="menu-border-bottom">BLOG</a>
+              <a href="#" class="menu-border-bottom">PORTFOLIO</a>
+              <a href="#" class="menu-border-bottom">ABOUT US</a>
+              <a href="#" class="menu-border-bottom">CONTACT US</a>
+              </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                      <a class="menu-border-bottom" href="#">Beauty & Personal care</a>
+                      <a class="menu-border-bottom" href="#">Nutritional Supplement</a>
+                      <a class="menu-border-bottom" href="#">Accessories</a>
+                      <a class="menu-border-bottom" href="#">Gourmet & Grocery Foods</a>
+                      <a class="menu-border-bottom" href="#">Toys & Games</a>
+                      <a class="menu-border-bottom" href="#">Pet Supplies</a>
+                      <a class="menu-border-bottom" href="#">Electronics</a>
+                      <a class="menu-border-bottom" href="#">Home & Kitchen</a>
+                      <a class="menu-border-bottom" href="#">Headphones</a>
+                      <a class="menu-border-bottom" href="#">Baby Products</a>
+                      <a class="menu-border-margin" href="#"></a>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- home section starts  -->
+  <!-- navbar end -->
+
+
+
+  <!-- banner image -->
+  <div class="container pb-5">
+    <div class="row">
+      <div class="wrapper col-md-6 col-sm-6 mt-5">
+        <img class="img-fluid banner-image" src="images/banner-image1.jpg" alt="">
+        <div class="overlay">
+            <div class="content">
+             <a href="">Discover</a>
+            </div>
+        </div>
+      </div>
+      <div class="wrapper col-md-6 col-sm-6 mt-5">
+        <img class="img-fluid banner-image" src="images/banner-image-2.webp" alt="">
+            <div class="overlay">
+            <div class="content">
+                <a href="">Discover</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- banner image end-->
+
+
+    <!-- products section-->
+    
+      <div class="container-fluid pt-5" style="background-color: #FAFAFA; font-family: Arial, Helvetica, sans-serif; padding-top: 100px !important; padding-bottom: 60px;">
+        
+        <div class="beautyproductsheading">
+          <h4>BEAUTY PRODUCTS</h4>
+          <h5 style="border-bottom: 2px solid #DFDFDF;"></h5>
+        </div>
+        <div class="main-div-beauty-products">
+
+        <div class="beauty-products">
+          <div class="row gy-5 justify-content-center text-align-center">
+
+             
+        <div class="products pt-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/11.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products pt-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/22.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products pt-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/33.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products pt-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/44.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products pt-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/55.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products pt-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/66.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products py-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/77.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products py-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/88.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products py-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/99.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products py-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/99.1.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products py-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/99.2.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+
+        <div class="products py-5 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/99.3.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+          </div>
+
+
+
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------Acceseries Products------------ -->
+    <!-- products section-->
+    
+    <div class="container-fluid pt-5" style="background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; padding-top: 60px !important;">
+        
+      <div class="accessoriesproductsheading">
+        <h5 style="border-bottom: 2px solid #DFDFDF;"></h5>
+        <h4>Accessories</h4>
+      </div>
+      <div class="main-div-beauty-products">
+
+      <div class="beauty-products">
+        <div class="row gy-5 justify-content-center text-align-center">
+
+           
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/a1.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/a2.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/a3.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/a4.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/a5.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/a6.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- ---------Acceseries Products end------------ -->
+        
+
+
+
+
+
+<!-- ---------Pet Supplies Products------------ -->
+    <!-- products section-->
+    
+    <div class="container-fluid pt-5" id="small-screen-margin" style="background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif;padding-bottom: 60px;">
+        
+      <div class="accessoriesproductsheading">
+        <h4><b>Pet Supplies</b></h4>
+      </div>
+
+      <div class="main-div-beauty-products">
+
+      <div class="beauty-products">
+        <div class="row gy-5 justify-content-center text-align-center">
+
+           
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/p1.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/p2.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/p3.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/p4.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/p5.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/p6.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- ---------Pet Supplies Products end------------ -->
+
+
+
+
+<!-- --------------------------cards----------------------- -->
+
+<div class="pt-5" style="background-color: #FAFAFA; font-family: Arial, Helvetica, sans-serif;">
+ 
+<div class="container">
+  <div class="beautyproductsheading">
+    <h4>NUTRITIONAL SUPPLEMENTS</h4>
+    <h5 style="border-bottom: 2px solid #DFDFDF;"></h5>
+  </div>
+  <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="col-md-3">
+      <img id="side-images" src="images/turmeric.jpg" class="img-fluid" alt="">
+    </div>
+    <div class="col-md-9">
+      <div class="row justify-content-center text-align-center">
+        <div class="products py-5 mx-md-2 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/gym1.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+        <div class="products py-5 mx-md-3 col-6 col-sm-6 col-md-4">
+          <a href=""><img src="images/gym2.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+        <div class="products col-6 py-5 mx-md-3 col-sm-6 col-md-4">
+          <a href=""><img src="images/gym3.jpg" alt=""></a>
+          <div class="products-data">
+            <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+            <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+            <span id="rate"><b>$10.00</b></span>
+            <!-- tool tip -->
+            <div class="tooltips-icons">
+              <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                <span class="tooltiptext-hs">Add to wishlist</span>
+              </div>
+              <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="tooltiptext-hs">Add to cart</span>
+              </div>
+              <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext-hs">Quick view</span>
+              </div>
+            </div>
+            <!-- tool tip end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- --------------------------cards end----------------------- -->
+
+
+
+
+ 
+  <div class="container">
+    <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+      <div class="col-md-3">
+        <img id="side-images" src="images/tur1.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="col-md-9">
+        <div class="row justify-content-center text-align-center">
+          <div class="products py-5 mx-md-2 col-6 col-sm-6 col-md-4">
+            <a href=""><img src="images/gym4.jpg" alt=""></a>
+            <div class="products-data">
+              <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+              <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+              <span id="rate"><b>$10.00</b></span>
+              <!-- tool tip -->
+              <div class="tooltips-icons">
+                <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                  <span class="tooltiptext-hs">Add to wishlist</span>
+                </div>
+                <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <span class="tooltiptext-hs">Add to cart</span>
+                </div>
+                <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                  <span class="tooltiptext-hs">Quick view</span>
+                </div>
+              </div>
+              <!-- tool tip end -->
+            </div>
+          </div>
+          <div class="products py-5 mx-md-3 col-6 col-sm-6 col-md-4">
+            <a href=""><img src="images/gym5.jpg" alt=""></a>
+            <div class="products-data">
+              <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+              <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+              <span id="rate"><b>$10.00</b></span>
+              <!-- tool tip -->
+              <div class="tooltips-icons">
+                <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                  <span class="tooltiptext-hs">Add to wishlist</span>
+                </div>
+                <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <span class="tooltiptext-hs">Add to cart</span>
+                </div>
+                <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                  <span class="tooltiptext-hs">Quick view</span>
+                </div>
+              </div>
+              <!-- tool tip end -->
+            </div>
+          </div>
+          <div class="products col-6 py-5 mx-md-3 col-sm-6 col-md-4">
+            <a href=""><img src="images/gym6.jpg" alt=""></a>
+            <div class="products-data">
+              <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+              <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+              <span id="rate"><b>$10.00</b></span>
+              <!-- tool tip -->
+              <div class="tooltips-icons">
+                <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+                  <span class="tooltiptext-hs">Add to wishlist</span>
+                </div>
+                <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <span class="tooltiptext-hs">Add to cart</span>
+                </div>
+                <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+                  <span class="tooltiptext-hs">Quick view</span>
+                </div>
+              </div>
+              <!-- tool tip end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+<!-- ---------Toys and game Supplies Products------------ -->
+    <!-- products section-->
+    
+    <div class="container-fluid pt-5" style="background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif;">
+        
+      <div class="accessoriesproductsheading">
+        <h4><b>Toys & Games</b></h4>
+      </div>
+
+      <div class="main-div-beauty-products">
+
+      <div class="beauty-products">
+        <div class="row gy-5 justify-content-center text-align-center">
+
+           
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t1.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t2.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t3.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t4.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t5.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t6.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- ---------Toys and games Products end------------ -->
+
+
+
+
+
+
+<!-- ---------Gourmet & Grocery Foods Supplies Products------------ -->
+    <!-- products section-->
+    
+    <div class="container-fluid" id="small-screen-margin" style="background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif;">
+        
+      <div class="accessoriesproductsheading">
+        <h4><b>Gourmet & Grocery Foods</b></h4>
+      </div>
+
+      <div class="main-div-beauty-products">
+
+      <div class="beauty-products">
+        <div class="row gy-5 justify-content-center text-align-center">
+
+           
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t1.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t2.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t3.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t4.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t5.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+      <div class="products pt-5 col-6 col-sm-6 col-md-4">
+        <a href=""><img src="images/t6.jpg" alt=""></a>
+        <div class="products-data">
+          <a href=""><p class="product-name">Dove Men+Care Clean</p></a>
+          <a href=""><p id="beautty">Beauty & Personal Care</p></a>
+          <span id="rate"><b>$10.00</b></span>
+          <!-- tool tip -->
+          <div class="tooltips-icons">
+            <div class="tooltip-hs"><a href=""><i class="fa-regular fa-heart"></i></a>
+              <span class="tooltiptext-hs">Add to wishlist</span>
+            </div>
+            <div class="tooltip-hs sideborder"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="tooltiptext-hs">Add to cart</span>
+            </div>
+            <div class="tooltip-hs"><i  id="myBtn" class="fa-solid fa-magnifying-glass"></i>
+              <span class="tooltiptext-hs">Quick view</span>
+            </div>
+          </div>
+          <!-- tool tip end -->
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- ---------Gourmet & Grocery Foods Products end------------ -->
+
+
+       
+
+
+
+
+    <!-- quick view modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal-1">
+
+  <!-- Modal content -->
+
+
+  <div class="modal-content-1 w3-animate-left">
+    <span class="close">&times;</span>
+    <div class="conatiner-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 col-sm-12">
+          <div class="for-modal">
+            <img src="images/11.jpg" alt="Lotion" class="image-modal">
+            <a href=""><div class="overlay-modal">VIEW DETAILS</div></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-sm-12 modalinnerpad">
+          <a href=""><h3 class="product-name-modal">Dove Men+Care Clean</h3></a>
+          <h4 class="product-price-modal">$10.00</h4>
+          <div class="cardmaindiv">
+            <div class="addproducttt">
+            <p class="minus">-</p>
+            <p class="number">1</p>
+            <p class="plus">+</p>
+            </div>
+            <div class="container cardbutton">
+            <button>ADD TO CART</button>
+          </div>
+        </div>
+          <hr style="width: 90%; margin-left: 5%;">
+          <di style="line-height: 8px;">
+          <p class="modal-cat"><b>Category:</b> Beauty & Personal care</p>
+          <p class="modal-cat"><b>Share:</b> <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin-in"></i> <i class="fa-brands fa-pinterest-p"></i> <i class="fa-brands fa-telegram"></i></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal content end-->
+
+</div>
+
+
+    <!-- quick view modal end -->
+    
+    <!-- products section end-->
+
+
+
+
+<!-- ---------End Section---------- -->
+
+<div class="delivery-last">
+  <div class="container"></div>
+<div class="delivery-child">
+  <div class="d-1"><img src="images/delivery-truck.png" alt=""><span>FREE SHIPPING</span></div>
+  <div class="d-1"><img width="70px" src="images/icon-return.png" alt=""><span>EXCHANGE POLICY</span></div>
+    <div class="d-1"><img width="50px" src="images/phone.png" alt=""><span>SUPPORT 24/7</span></div>
+      <div class="d-1"><img src="images/shield.png" alt=""><span>100% SAFE & SECURE</span></div>
+</div>
+</div>
+</div>
+
+
+<div style="background-color: #FAFAFA;">
+
+<div class="conatiner py-5 text-center justify-content-center">
+  <img width="auto" src="images/logo.png" alt="Logo">
+</div>
+
+<div class="conatiner-fluid px-4 pb-5">
+  <div class="ourlocation py-2">
+    <div><span><i class="fa-solid fa-location-arrow py-1"></i></span> 7901 4TH ST. N , STE 4894 ST. PETERSBURG, FL, US 33702</div>
+    <div><span><i class="fa-sharp fa-solid fa-mobile-screen-button py-2"></i></span> Phone: +1 (727) 819-7120</div>
+    <div><span><i class="fa-regular fa-envelope py-1"></i></span>sales@fashionstore.com</div>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.182370726!2d-0.10159865000000001!3d51.52864165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1674074069768!5m2!1sen!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<br><br>
+<p class=" col-12 text-center text-dark">@humaidshaykh</p>
+
+</div>
+
+<!-- ---------End Section---------- -->
+<a href="#" class="to-top">
+  <i class="fa-solid fa-angle-up"></i>
+</a>
+<!-- Personal js -->
+<script src="main.js"></script>
+<!-- bootstrap js link-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

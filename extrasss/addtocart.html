@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .addproduct{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .number{
+        border-top: 2px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+        background-color: transparent;
+        padding: 10px 15px;
+    }
+    .minus{
+        padding: 10px 6px;
+        transition: 0.3s ease-in-out;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    .minus:hover{
+        background-color: rgb(219, 51, 64);
+        border-color: rgb(219, 51, 64);
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    .plus{
+        padding: 10px 6px;
+        transition: 0.3s ease-in-out;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    .plus:hover{
+        background-color: rgb(219, 51, 64);
+        border-color: rgb(219, 51, 64);
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+</style>
+<body>
+  
+    <div class="container">
+        <div class="addproduct">
+        <p class="minus">-</p>
+        <p class="number">1</p>
+        <p class="plus">+</p>
+        <button style="padding: 12px 50px; background-color: yellow;">Add to cart</button>
+        </div>
+    </div>
+
+
+    <script>
+        const plus = document.querySelector(".plus");
+              minus = document.querySelector(".minus");
+              number = document.querySelector(".number");
+
+              let a = 1;
+              
+              plus.addEventListener("click",()=>{
+                a++;
+                a = (a < 10) ? + a : a;
+                number.innerText = a;
+                console.log(a);
+              });
+
+
+              minus.addEventListener("click",()=>{
+                if(a > 1){
+                    a--;
+                    a = (a < 10) ? + a : a;
+                number.innerText = a;
+                }
+              });
+
+
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+.modal-content {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+  }

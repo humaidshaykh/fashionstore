@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        
+
+        <!-- font awesome css link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --red-colour:rgb(219, 51, 64);
+    --red-dark-color:rgb(198, 36, 55);
+    --black:#242424;
+    --light-color:#666;
+    --side-borders: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.heading::before{
+    content: '';
+    position: absolute;
+    top:50%; left:0;
+    transform: translateY(-50%);
+    width: 100%;
+    height:.01rem;
+    background: rgba(0,0,0,.1);
+    z-index: -1;
+}
+
+.heading span{
+    /* font-size: 3rem; */
+    padding:.5rem 2rem;
+    color:var(--black);
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.1);
+}
+
+#arrow:hover{
+    rotate: 180deg;
+    transition: 0.3s ease-in-out;
+}
+
+.btnnnnn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    border-radius: .5rem;
+    color:#fff;
+    background:var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btnnnnn:hover{
+    background:var(--dark-color);
+}
+
+.headerr .header-1{
+    background:#fff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerr .header-1 .search-form{
+    width: 50%;
+    height:3rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    overflow: hidden;
+    background:#fff;
+    display:flex;
+    align-items: center;
+}
+
+.headerr .header-1 .search-form input{
+    font-size: 1rem;
+    padding: 0 1.2rem;
+    outline: none;
+    border:none;
+    height:100%;
+    width:100%;
+    text-transform: none;
+    color:var(--black);
+}
+
+.headerr .header-1 .search-form label{
+    font-size: 20px;
+    padding-right: 1.5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+
+.headerr .header-1 .search-form label:hover{
+    color: var(--light-color);
+}
+
+.headerr .header-1 .icons div,
+.headerr .header-1 .icons a{
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: 16px;
+    color:var(--black);
+    cursor: pointer;
+}
+
+.headerr .header-1 .icons div:hover,
+.headerr .header-1 .icons a:hover{
+    color: var(--light-color);
+}
+
+#search-btnnnnn{
+    display: none;
+}
+
+#search-btn{
+    display: none;
+}
+
+.headerr .header-2{
+    background: var(--red-colour);
+}
+
+.headerr .header-2 .navbarrr{
+    text-align: start;
+    margin-left: 20px;
+}
+
+.headerr .header-2 .navbarrr a{
+    color:#fff;
+    font-size: 14px;
+    display: inline-block;
+    padding: 16px;
+    transition:all .2s linear;
+}
+
+.headerr .header-2 .navbarrr a:hover{
+    background: #C62437;
+    transition:all .2s linear;
+}
+
+.headerr .header-2.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+
+}
+
+.bottom-navbar{
+    text-align: center;
+    background: var(--red-colour);
+    position: fixed;
+    bottom:0; left:0; right:0;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 0 9px rgb(0 0 0 / 12%);
+    background-color: #fff;
+}
+
+.bottom-navbar a{
+    font-size: 20px;
+    padding: 16px;
+    margin: 0px 16px;
+    color:black; 
+    transition:all .2s linear;
+}
+
+.bottom-navbar a:hover{
+    color: rgba(0, 0, 0, 0.6);
+    transition:all .2s linear;
+}
+
+/* dropdown */
+.dropdownn {
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+#drop1st{
+    background-color: #fff;
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-right: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-left: 0.5px solid rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    text-decoration: none;
+    color: #333333;
+    width: 100%;
+}
+#drop1st:hover{
+    background-color: #F7F7F7;
+    transition: 0.1s ease-in-out;
+    color: #A5A5A5;
+}
+#droplast{
+    background-color: #fff;
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    text-decoration: none;
+    color: #333333;
+    width: 100%;
+}
+#droplast:hover{
+    background-color: #F7F7F7;
+    transition: 0.1s ease-in-out;
+    color: #A5A5A5;
+}
+#drop{
+    background-color: #fff;
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-right: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-left: 0.5px solid rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    text-decoration: none;
+    color: #333333;
+    width: 100%;
+}
+#drop:hover{
+    background-color: #F7F7F7;
+    transition: 0.1s ease-in-out;
+    color: #A5A5A5;
+}
+
+.dropdownn-content:hover{
+    background-color: #F7F7F7;
+}
+.dropdownn-content {
+  display: none;
+  position: absolute;
+  width: 285px;
+  z-index: 1;
+}
+
+.dropdownn-content a {
+  color: black;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownn:hover .dropdownn-content {display: block;}
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+    .headerr .header-1{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .headerr .header-2{
+        display:none;
+    }
+
+    .bottom-navbar{
+        display: block;
+    }
+
+    #search-btnnnnn{
+        display: inline-block;
+    }
+
+    .headerr .header-1{
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+
+    .headerr .header-1 .search-form{
+        position:absolute;
+        top:-115%; right:2rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+
+    .headerr .header-1 .search-form.active{
+        top:115%;
+    }
+
+    .home .row .content{
+        text-align: center;
+    }
+
+    .home .row .content h3{
+        font-size: 3.5rem;
+    }
+
+    .newsletter{
+        background-position: right;
+    }
+
+    .newsletter form{
+        margin-left:0;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width:450px){
+
+}
+
+/* bottom navbar category */
+.sideenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sideenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333333;
+  font-weight: 500;
+  display: block;
+  transition: 0.3s;
+}
+.sideenav a:hover{
+    color: #A5A5A5;
+}
+
+.ssp a:hover {
+    background-color: #F7F7F7;
+    transition: 0.1s ease-in-out;
+    color: #A5A5A5;
+}
+
+.sideenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.bottom-nav-cat{
+    color: rgba(0, 0, 0, 0.6);
+}
+.bottom-nav-cat:hover{
+    color: black;
+}
+.menu-border-bottom{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+    /* border-right: 0.5px solid rgba(0, 0, 0, 0.2); */
+}
+
+@media screen and (max-height: 450px) {
+  .sideenav {padding-top: 15px;}
+  .sideenav a {font-size: 18px;}
+}
+
+/* bottom navbar category end*/
+
+
+</style>
+<body>
+    <!-- header section starts  -->
+
+<header class="headerr">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"><img width="120px" src="/images/logo.png" alt=""></a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Search here" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btnnnnn" class="fas fa-search"></div>
+            <a href="#" class="far fa-heart fa-9x"></a>
+            <a href="#" class="fa-sharp fa-solid fa-bag-shopping"></a>
+            <div id="login-btn" class="fa-regular fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbarrr">
+            <div class="dropdownn">
+            <a style="background-color: var(--red-dark-color);" class="dropbtnn" href="#home"><i class="fa-solid fa-bars" style="margin-right: 10px; font-size: 16px; align-items: center;"></i>BROWSE CATEGORIES<i id="arrow" class="fa-sharp fa-solid fa-angle-down" style="margin-left: 70px; font-size: 16px; align-items: center;"></i></a>
+            <div class="dropdownn-content">
+                <a id="drop1st" href="#">Beauty & Personal care</a>
+                <a id="drop" href="#">Nutritional Supplement</a>
+                <a id="drop" href="#">Accessories</a>
+                <a id="drop" href="#">Gourmet & Grocery Foods</a>
+                <a id="drop" href="#">Toys & Games</a>
+                <a id="drop" href="#">Pet Supplies</a>
+                <a id="drop" href="#">Electronics</a>
+                <a id="drop" href="#">Home & Kitchen</a>
+                <a id="drop" href="#">Headphones</a>
+                <a id="droplast" href="#">Baby Products</a>
+        </div>
+    </div>
+            <a href="#featured">HOME</a>
+            <a href="#arrivals">CONTACT US</a>
+            <a href="#reviews">ABOUT US</a>
+            <!-- <a href="#blogs">BLOGS</a> -->
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"><span style="font-size: 12px; font-weight: 500; color: black; "><br>Home</span></a>
+    <a href="#featured" class="fas fa-list" onclick="opennNav()"><span style="font-size: 12px; font-weight: 500; color: black; "><br>Categories</span></a>
+    <a href="#reviews" class="fa-sharp fa-solid fa-bag-shopping"><span style="font-size: 12px; font-weight: 500; color: black; "><br>Cart</span></a>
+    <a href="#blogs" class="fa-solid fa-user"><span style="font-size: 12px; font-weight: 500; color: black; "><br>My account</span></a>
+</nav>
+
+<div id="mySideenav" class="sideenav">
+    
+    <a href="javascript:void(0)"class="closebtn" onclick="closeeNav()" ><span>&times;</span></a>
+    <nav>
+    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <button class="nav-link active rounded-0 bottom-nav-cat" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">MENU</button>
+        <button class="nav-link rounded-0 bottom-nav-cat" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">CATEGORIES</button>
+      </div>
+    </nav>
+    <div class="tab-content ssp" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <a href="#" class="menu-border-bottom">HOME</a>
+        <a href="#" class="menu-border-bottom">SHOP</a>
+        <a href="#" class="menu-border-bottom">BLOG</a>
+        <a href="#" class="menu-border-bottom">PORTFOLIO</a>
+        <a href="#" class="menu-border-bottom">ABOUT US</a>
+        <a href="#" class="menu-border-bottom">CONTACT US</a>
+        </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <a class="menu-border-bottom" href="#">Beauty & Personal care</a>
+                <a class="menu-border-bottom" href="#">Nutritional Supplement</a>
+                <a class="menu-border-bottom" href="#">Accessories</a>
+                <a class="menu-border-bottom" href="#">Gourmet & Grocery Foods</a>
+                <a class="menu-border-bottom" href="#">Toys & Games</a>
+                <a class="menu-border-bottom" href="#">Pet Supplies</a>
+                <a class="menu-border-bottom" href="#">Electronics</a>
+                <a class="menu-border-bottom" href="#">Home & Kitchen</a>
+                <a class="menu-border-bottom" href="#">Headphones</a>
+                <a class="menu-border-bottom" href="#">Baby Products</a>
+    </div>
+    </div>
+
+  </div>
+
+<!-- home section starts  -->
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<script>
+    //bottom navbar category js
+    function opennNav() {
+      document.getElementById("mySideenav").style.width = "250px";
+    }
+    
+    function closeeNav() {
+      document.getElementById("mySideenav").style.width = "0";
+    }
+    //bottom navbar category js end
+    </script>
+
+
+<script>
+// navbar search js
+    searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btnnnnn').onclick = () =>{
+  searchForm.classList.toggle('active');
+}
+// navbar search js end
+
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
